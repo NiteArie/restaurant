@@ -47,14 +47,29 @@ function createMenuItem({ image, title, price}) {
     return menuItem;
 }
 
+function createMenuHeader() {
+    let title = document.createElement("h2");
+
+    title.textContent = "Menu";
+
+    title.classList.add("menu__title");
+
+    return title;
+}
+
 function createMenuContent() {
-    let menu = document.createElement("menu");
+    let menu = document.createElement("div");
+    let menuContent = document.createElement("div");
 
     menu.classList.add("menu");
-
+    menuContent.classList.add("menu__content");
+    
     _data.forEach((item) => {
-        menu.appendChild(createMenuItem(item));
+        menuContent.appendChild(createMenuItem(item));
     })
+    
+    menu.appendChild(createMenuHeader());
+    menu.appendChild(menuContent);
 
     return menu;
 }

@@ -112,11 +112,19 @@ body {
     max-width: 1440px;
     margin: 20px;
     padding: 20px;
+    border-radius: 20px;
+}
+
+.menu__title {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+}
+
+.menu__content {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    border-radius: 20px;
-    background-color: hsl(0, 5%, 60%);
 }
 
 .menu__item {
@@ -124,8 +132,6 @@ body {
     display: flex;
     margin: 20px;
     padding: 20px;
-    background-color: hsl(180, 30%, 80%);
-    border: 1px solid hsl(0, 60%, 50%);
     border-radius: 20px;
 }
 
