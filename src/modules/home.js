@@ -1,3 +1,5 @@
+import { removePage } from './utils';
+
 function createHomeHero() {
     let homeHero = document.createElement('div');
     let slogan = document.createElement('h1');
@@ -65,6 +67,8 @@ function createHome() {
     let homeHero = createHomeHero();
 
     const content = document.querySelector("#content")
+    
+    removePage();
 
     content.append(homeHero, homeContent);
 }

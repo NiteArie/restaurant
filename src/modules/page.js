@@ -21,6 +21,10 @@ export function createHeader() {
     ul.classList.add("header__nav__links");
     linkContainer.classList.add("header__nav__links__items");
 
+    homeLink.classList.add("header__nav__links__items__home");
+    menuLink.classList.add("header__nav__links__items__menu");
+    contactLink.classList.add("header__nav__links__items__contact");
+
     ul.appendChild(mainLink);
     linkContainer.appendChild(homeLink);
     linkContainer.appendChild(menuLink);

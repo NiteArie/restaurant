@@ -1,3 +1,5 @@
+import { removePage } from './utils';
+
 const _data = [
     {
         image: "chips.jpg",
@@ -76,6 +78,9 @@ function createMenuContent() {
 
 function createMenu() {
     const content = document.getElementById('content');
+
+    removePage();
+
     content.appendChild(createMenuContent());
 }
 
