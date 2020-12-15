@@ -1,4 +1,4 @@
-import { removePage } from './utils';
+import { highlightLink, removePage } from './utils';
 
 const _data = [
     {
@@ -79,6 +79,7 @@ function createMenuContent() {
 function createMenu() {
     const content = document.getElementById('content');
 
+    highlightLink("menuLink");
     removePage();
 
     content.appendChild(createMenuContent());

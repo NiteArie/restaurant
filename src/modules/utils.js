@@ -22,4 +22,23 @@ export function removePage() {
     }
 }
 
+export function highlightLink(link) {
+    const homeLink = document.querySelector(".header__nav__links__items__home");
+    const menuLink = document.querySelector(".header__nav__links__items__menu");
+    const contactLink = document.querySelector(".header__nav__links__items__contact");
+
+    homeLink.classList.remove("active");
+    menuLink.classList.remove("active");
+    contactLink.classList.remove("active");
+
+    if ( link == "homeLink") {
+        homeLink.classList.add("active");
+    } else if ( link == "menuLink") {
+        menuLink.classList.add("active");
+    } else if ( link == "contactLink") {
+        contactLink.classList.add("active");
+    }
+
+    
+}
 

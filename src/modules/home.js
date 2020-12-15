@@ -1,4 +1,4 @@
-import { removePage } from './utils';
+import { highlightLink, removePage } from './utils';
 
 function createHomeHero() {
     let homeHero = document.createElement('div');
@@ -67,7 +67,8 @@ function createHome() {
     let homeHero = createHomeHero();
 
     const content = document.querySelector("#content")
-    
+
+    highlightLink("homeLink");
     removePage();
 
     content.append(homeHero, homeContent);

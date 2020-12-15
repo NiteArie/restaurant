@@ -1,4 +1,4 @@
-import { removePage } from "./utils";
+import { highlightLink, removePage } from "./utils";
 
 function createContactHeader() {
     let title = document.createElement("h2");
@@ -74,6 +74,7 @@ function createContact() {
     const header = createContactHeader();
     const contact = createContactContent();
 
+    highlightLink("contactLink");
     removePage();
 
     content.append(header, contact);
