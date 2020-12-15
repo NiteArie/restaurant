@@ -1,11 +1,12 @@
 import { createHeader } from './modules/page';
 import createHome from './modules/home';
 import createMenu from './modules/menu';
+import createContact from './modules/contact';
 
 function init() {
     createHeader();
     initNavigation();
-    createMenu();
+    createContact();
 }
 
 function initNavigation() {
@@ -15,6 +16,7 @@ function initNavigation() {
 
     homeLink.addEventListener('click', createHome);
     menuLink.addEventListener('click', createMenu);
+    contactLink.addEventListener('click', createContact);
 }
 
 init();

@@ -155,3 +155,74 @@ body {
     margin-top: 20px;
     font-size: 20px;
 }
+
+/* Contact */
+
+.contact {
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    padding: 20px;
+
+}
+
+.contact__title {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    margin: 20px auto;
+}
+
+.contact__img {
+    width: 400px;
+    flex-basis: 400px;
+    flex-grow: 1;
+
+    border-radius: 5px;
+}
+
+.contact__form {
+    flex-basis: 300px;
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.contact__form__label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contact__form__input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 16px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid hsl(210, 50%, 80%);
+}
+
+.contact__form__input:focus {
+    outline: none;
+}
+
+.contact__form__submit {
+    display: block;
+    padding: 10px 30px;
+    font-size: 16px;
+    
+    background-color: white;
+    border-radius: 3px;
+
+    cursor: pointer;
+}
+
+.contact__form__submit:hover {
+    background-color: black;
+    color: white;
+}

@@ -3,7 +3,8 @@ function checkPage(element) {
         element.classList.contains("menu") ||
         element.classList.contains("home") ||
         element.classList.contains("home__hero") ||
-        element.classList.contains("contact")
+        element.classList.contains("contact") ||
+        element.classList.contains("contact__title")
     )
         return true;
     else 
